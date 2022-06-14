@@ -34,13 +34,14 @@ class Rating extends Field
     ];
 
     /**
-     * Rating constructor.
+     * Create a new field.
      *
-     * @param string $name
-     * @param null|string $attribute
-     * @param mixed|null $resolveCallback
+     * @param  string  $name
+     * @param  string|callable|null  $attribute
+     * @param  callable|null  $resolveCallback
+     * @return void
      */
-    public function __construct(string $name, $attribute = null, mixed $resolveCallback = null)
+    public function __construct(string $name, $attribute = null, callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
 
